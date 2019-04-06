@@ -1,3 +1,13 @@
+def kitchen():
+    print""
+def garage():
+    print""
+def window():
+    print""
+def livingRoom():
+    print""
+def nap():
+    print""
 def bathroom():
     inputVal = input("Select choice")
     if inputVal==1:
@@ -22,22 +32,45 @@ def bedroom():
     elif inputVal==5:
         return
     else:
-	    print("invalid choice")
+	print"invalid choice"
 	
 def energyBar():
-    print "Energy Level "+energy+"%"
+    global energy
+    print "Energy Level ",energy,"%"
 
 def hallway():
+    
     while True:
         print "you are in the hallway"
-        print "your choices are:\n1.Bedroom\n2.Bathroom\n3.Kitchen\n4.Garage\n5.Window\n6.Living Room"
+	energyBar()
+	global energy
+	if energy>0:
+	    energy = energy-10
+        print "your choices are:\n1.Bedroom\n2.Bathroom\n3.Kitchen\n4.Garage\n5.Window\n6.Living Room\n7.Nap"
 	inputVal = input("\nEnter your choice:")
+	if inputVal==1:
+	    bedroom()
+	elif inputVal==2:
+	    bathroom()
+	elif inputVal==3:
+	    kitchen()
+	elif inputVal==4:
+	    garage()
+	elif inputVal==5:
+	    window()
+	elif inputVal==6:
+	    livingroom()
+	elif inputVal==7:
+	    nap()
+	else:
+	    print "invalid entry"
 
 print"-----------------------------------------"
 print"            Wake up Simon"
 print"-----------------------------------------"
 print"    you wake up in the hallway. why did you fall asleep here? you stand up and stretch."
 print"Where is Sophia? you need to find out where she went. better investigate.              "
+energy=100
 hallway()
 
 
