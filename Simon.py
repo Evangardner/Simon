@@ -1,14 +1,16 @@
-def kitchen():
-        print "In the Kitchen you see a Fridge, Stove, and Table ... "
-    while true:
-        inputVal = input("Your choices are:\n1.Fridge\n2.Stove\n3.Table\n4.Return to Hallway")
+def kitchen(): 
+    print "You enter the Kitchen and see a Fridge, Stove, and Table ... "
+    while True:
+        inputVal = input("Your choices are:\n1.Fridge\n2.Stove\n3.Table\n4.Return to Hallway\nSelect choice: ")
+
         if inputVal==1:
-	        print "You look at the fridge, you stomach grumbles ... you are hungry"
+	        print "\nYou look at the fridge, you stomach grumbles ... you are hungry"
         elif inputVal==2:
-            print "You look at the stove, there is a letter sitting on top ..."
+            print "\nYou look at the stove, there is a letter sitting on top ..."
+            #TODO Print letter 1
 #add in stuff for reading letter twice etc ... ADD COUNTER, for first letter, write some specific statements etc
         elif inputVal==3:
-            print "You look at the table, yesterdays dirty dishes are left. Sophia has been rather absent recently ..."
+            print "\nYou look at the table, yesterdays dirty dishes are left. Sophia has been rather absent recently ..."
         elif inputVal==4:
             return
         else:
@@ -25,6 +27,18 @@ def garage():
             return
         else:
             print"\ninvalid choice\n"
+
+def garage():
+    print"You enter the Garage, the concrete is cool on your feet. You see that Sophia's car is missing, where did she go?"
+while true:
+    inputVal = input("Your choices are:\n1.Look through the window\n2.Return to Hallway\nSelect choice: ")
+    if inputVal==1:
+        print "You look through the window, there are no cars in sight. It is a sunny and beautiful day ..."
+        print "you wish you could go outside for a bit ..."
+    elif inputVal==2:
+        return
+    else:
+        print"\nInvalid choice\n"
 
 def window():
     print "You peek through the window, a bird flys by and you are distracted for a period of time ... "
