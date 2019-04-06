@@ -1,35 +1,44 @@
 def bathroom():
-    if inputVal=="sink":
-	#do sink things
-    elif inputVal=="shower":
-        #do shower things
-    elif inputval=="go to Hallway":
-        #return to hallway
+    inputVal = input("Select choice")
+    if inputVal==1:
+	print""
+    elif inputVal==2:
+        print""
+    elif inputval==3:
+        return
     else:
-	print("invalid choice")
+ 	print"invalid choice"
 
 def bedroom():
-    if inputVal=="bed":
-	#do bed things
-    elif inputVal=="nightstand":
-        #do nightstand things
-    elif inputVal=="dresser":
-        #dresser things
-    elif inputVal=="closet":
-        #leave bathroom, set room to hallway
-    elif inputVal=="go to Hallway":
-        #return to hallway
+    inputVal = input("Select choice")
+    if inputVal==1:
+	print""
+    elif inputVal==2:
+        print""
+    elif inputVal==3:
+        print""
+    elif inputVal==4:
+        print""
+    elif inputVal==5:
+        return
     else:
-	print("invalid choice")
+	    print("invalid choice")
+	
+def energyBar():
+    print "Energy Level "+energy+"%"
+
+def hallway():
+    while True:
+        print "you are in the hallway"
+        print "your choices are:\n1.Bedroom\n2.Bathroom\n3.Kitchen\n4.Garage\n5.Window\n6.Living Room"
+	inputVal = input("\nEnter your choice:")
+print"-----------------------------------------"
+print"            Wake up Simon"
+print"-----------------------------------------"
+print"    you wake up in the hallway. why did you fall asleep here? you stand up and stretch."
+print"Where is Sophia?  
+hallway()
 
 
-    
 
-
-
-
-
-
-
-print("you wake up in your room")
 
