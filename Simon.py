@@ -7,9 +7,9 @@ def kitchen():
     elif inputVal==2:
         print "You look at the stove, there is a letter sitting on top ... who left this? Sophia?"
 #add in stuff for reading letter twice etc ... ADD COUNTER
-    elif inputval==3:
+    elif inputVal==3:
         print "You look at the table, yesterdays dirty dishes are left. Sophia has been rather absent recently ..."
-    elif inputval==4:
+    elif inputVal==4:
         return
     else:
  	print"invalid choice"
@@ -29,7 +29,7 @@ def bathroom():
 	print""
     elif inputVal==2:
         print""
-    elif inputval==3:
+    elif inputVal==3:
         return
     else:
  	print"invalid choice"
@@ -60,27 +60,27 @@ def hallway():
 	energyBar()
 	global energy
 	if energy>0:
-     energy = energy-10
-  if energy == 0:
-      print "Simon closes his eyes and begins to drift away ... his eyes do not open again."
-      return
-   print "your choices are:\n1.Bedroom\n2.Bathroom\n3.Kitchen\n4.Garage\n5.Window\n6.Living Room\n7.Nap"
-   inputVal = input("\nEnter your choice:")
-   if inputVal==1:
+	    energy = energy-10
+        if energy == 0:
+    	    print "Simon closes his eyes and begins to drift away ... his eyes do not open again."
+	    return
+        print "your choices are:\n1.Bedroom\n2.Bathroom\n3.Kitchen\n4.Garage\n5.Window\n6.Living Room\n7.Nap"
+        inputVal = input("\nEnter your choice:")
+        if inputVal==1:
 	    bedroom()
-    elif inputVal==2:
+        elif inputVal==2:
 	    bathroom()
-    elif inputVal==3:
+        elif inputVal==3:
 	    kitchen()
-    elif inputVal==4:
-      garage()
-    elif inputVal==5:
+        elif inputVal==4:
+	    garage()
+        elif inputVal==5:
 	    window()
-    elif inputVal==6:
-      livingroom()
-     elif inputVal==7:
+        elif inputVal==6:
+	    livingroom()
+        elif inputVal==7:
 	    nap()
-     else:
+        else:
 	    print "invalid entry"
 
 def nap():
