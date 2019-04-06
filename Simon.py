@@ -2,6 +2,7 @@ def kitchen():
     print "You enter the Kitchen and see a Fridge, Stove, and Table ... "
     while True:
         inputVal = input("Your choices are:\n1.Fridge\n2.Stove\n3.Table\n4.Return to Hallway\nSelect choice: ")
+
         if inputVal==1:
 	        print "\nYou look at the fridge, you stomach grumbles ... you are hungry"
         elif inputVal==2:
@@ -13,11 +14,23 @@ def kitchen():
         elif inputVal==4:
             return
         else:
- 	        print"\nInvalid choice\n"
+ 	        print"\ninvalid choice\n"
+
+def garage():
+        print "In the Garage you see Sophia's car is missing, the concrete is cool on your feet, where did she go?"
+    while true:
+        inputVal = input("Your choices are:\n1.Look through the window\n2.Return to Hallway")
+        if inputVal==1:
+            print "You look through the window, there are no cars in sight. It is a sunny and beautiful day ..."
+            print "you wish you could go outside for a bit ..."
+        elif inputVal==2:
+            return
+        else:
+            print"\ninvalid choice\n"
 
 def garage():
     print"You enter the Garage, the concrete is cool on your feet. You see that Sophia's car is missing, where did she go?"
-    
+while true:
     inputVal = input("Your choices are:\n1.Look through the window\n2.Return to Hallway\nSelect choice: ")
     if inputVal==1:
         print "You look through the window, there are no cars in sight. It is a sunny and beautiful day ..."
@@ -28,48 +41,54 @@ def garage():
         print"\nInvalid choice\n"
 
 def window():
-    print"You peek through the window, a bird flys by and you are distracted for a period of time ... "
+    print "You peek through the window, a bird flys by and you are distracted for a period of time ... "
 #look through the window a second time and dont see bird D:
 
 def livingRoom():
-    print"You enter the living room and see a TV, Couch, and Coffee Table"
-    inputVal = input("Your choices are:\n1.TV\n2.Couch\n3.Coffee Table\n4.Return to Hallway\nSelect choice: ")
-    if inputVal==1:
-        print "The TV is on, soothing music is playing."
-    elif inputVal==2:
-        print "You see a letter stuffed between the cushions... "
-    elif inputVal==3:
-        print "You look on the coffee table, there is a half finished cup of tea ... Sophia always finishes her tea"
-    elif inputVal==4:
-        return
-    else:
-        print"\nInvalid choice\n"
+        print "In the living room and see a TV, Couch, and Coffee Table"
+    while true:
+        inputVal = input("Your choices are:\n1.TV\n2.Couch\n3.Coffee Table\n4.Return to Hallway")
+        if inputVal==1:
+            print "The TV is on, soothing music is playing."
+        elif inputVal==2:
+            print "You see a letter stuffed between the cushions... "
+        elif inputVal==3:
+            print "You look on the coffee table, there is a half finished cup of tea ... Sophia always finishes her tea"
+        elif inputVal==4:
+            return
+        else:
+            print"\ninvalid choice\n"
 
 def bathroom():
-    inputVal = input("Your choices are:\n\nSelect choice: ")
-    if inputVal==1:
-	    print""
-    elif inputVal==2:
-        print""
-    elif inputVal==3:
-        return
-    else:
- 	    print"\nInvalid choice\n"
+        print "In the bathroom you see a Sink and Bathtub. Sophia didn't drain her last bath ... lazy"
+    while true:
+        inputVal = input("Your choices are:\n1.Sink\n2.Bathtub\n3.Return to Hallway")
+        if inputVal==1:
+	        print "You look at the sink, and see your reflection in the mirror. You look cute today :3"
+        elif inputVal==2:
+            print "You look at the bathtub and dip your foot in the water, it is cold and you are now upset"
+            print "to the side of the tub you see a letter ... "
+        elif inputVal==3:
+            return
+        else:
+ 	        print"\nInvalid choice\n"
 
 def bedroom():
-    inputVal = input("Your choices are:\n\nSelect choice: ")
-    if inputVal==1:
-	print""
-    elif inputVal==2:
-        print""
-    elif inputVal==3:
-        print""
-    elif inputVal==4:
-        print""
-    elif inputVal==5:
-        return
-    else:
-	    print"\nInvalid choice\n"
+        print "In the bedroom you see a Bed, Dresser, and Nightstand. It's chilly in here."
+    while true:
+        inputVal = input("Your choices are:\n1.Bed\n2.Dresser\n3.Nightstand\n4.Return to Hallway")
+        if inputVal==1:
+	    print "You look at the bed, it is made nice and neat. You have an urge to get under the covers for a bit."
+        print "so you do ..."
+        elif inputVal==2:
+            print "You look at the dressser, there is a letter ..."
+        elif inputVal==3:
+            print "You look at the nightstand, there is a cute picture of you and Sophia."
+            print "it fills you with love"
+        elif inputVal==4:
+            return
+        else:
+	        print"\nInvalid choice\n"
 	
 def energyBar():
     global energy
