@@ -1,19 +1,18 @@
 def kitchen():
-    print "You enter the Kitchen and see a Fridge, Stove, and Table ... "
-
-<<<<<<< HEAD
-    inputVal = input("Your choices are:\n1.Fridge\n2.Stove\n3.Table\n4.Return to Hallway")
-    if inputVal==1:
-	    print "You look at the fridge, you stomach grumbles ... you are hungry"
-    elif inputVal==2:
-        print "You look at the stove, there is a letter sitting on top ..."
+    while True: 
+        print "You enter the Kitchen and see a Fridge, Stove, and Table ... "
+        inputVal = input("Your choices are:\n1.Fridge\n2.Stove\n3.Table\n4.Return to Hallway")
+        if inputVal==1:
+	        print "You look at the fridge, you stomach grumbles ... you are hungry"
+        elif inputVal==2:
+            print "You look at the stove, there is a letter sitting on top ..."
 #add in stuff for reading letter twice etc ... ADD COUNTER, for first letter, write some specific statements etc
-    elif inputVal==3:
-        print "You look at the table, yesterdays dirty dishes are left. Sophia has been rather absent recently ..."
-    elif inputVal==4:
-        return
-    else:
- 	    print"invalid choice"
+        elif inputVal==3:
+            print "You look at the table, yesterdays dirty dishes are left. Sophia has been rather absent recently ..."
+        elif inputVal==4:
+            return
+        else:
+ 	        print"invalid choice"
 
 def garage():
     print"You enter the Garage, the concrete is cool on your feet. You see that Sophia's car is missing, where did she go?"
@@ -44,30 +43,6 @@ def livingRoom():
         return
     else:
         print"invalid choice"
-=======
-    while True: 
-        inputVal = input("Your choices are:\n1.Fridge\n2.Stove\n3.Table\n4.Return to Hallway\nSelect choice: ")
-        if inputVal==1:
-	        print "\nYou look at the fridge, you stomach grumbles ... you are hungry"
-        elif inputVal==2:
-            print "\nYou look at the stove, there is a letter sitting on top ... who left this? Sophia?"
-            letter(1) #TODO figure out how we want to do the letters: Have a date stamp? or Assign the letters dynamically?
-        elif inputVal==3:
-            print "\nYou look at the table, yesterdays dirty dishes are left. Sophia has been rather absent recently ..."
-        elif inputVal==4:
-            return
-        else:
- 	        print"\nInvalid choice\n"
-
-def garage():
-    inputVal = input("Your choices are:\n\nSelect choice: ")
-
-def window():
-    inputVal = input("Your choices are:\n\nSelect choice: ")
-
-def livingRoom():
-    inputVal = input("Your choices are:\n\nSelect choice: ")
->>>>>>> c4a831e41c654f786fc9fcdfa01b488dbb79e052
 
 def bathroom():
     inputVal = input("Your choices are:\n\nSelect choice: ")
