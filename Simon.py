@@ -33,6 +33,9 @@ def hallway():
         print "your choices are:\n1.Bedroom\n2.Bathroom\n3.Kitchen\n4.Garage\n5.Window\n6.Living Room"
 	inputVal = input("\nEnter your choice:")
 
+def nap():
+   if global  
+
 print"-----------------------------------------"
 print"            Wake up Simon"
 print"-----------------------------------------"
