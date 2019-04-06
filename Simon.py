@@ -1,11 +1,28 @@
 def kitchen():
-    print""
+    print "You enter the Kitchen and see a Fridge, Stove, and Table ... "
+
+    inputVal = input("Your choices are:\n1.Fridge\nStove\n3.Table\n4.Return to Hallway")
+    if inputVal==1:
+	print "You look at the fridge, you stomach grumbles ... you are hungry"
+    elif inputVal==2:
+        print "You look at the stove, there is a letter sitting on top ... who left this? Sophia?"
+#add in stuff for reading letter twice etc ... ADD COUNTER
+    elif inputval==3:
+        print "You look at the table, yesterdays dirty dishes are left. Sophia has been rather absent recently ..."
+    elif inputval==4:
+        return
+    else:
+ 	print"invalid choice"
+
 def garage():
     print""
+
 def window():
     print""
+
 def livingRoom():
     print""
+
 def bathroom():
     inputVal = input("Select choice")
     if inputVal==1:
@@ -45,7 +62,7 @@ def hallway():
 	if energy>0:
 	    energy = energy-10
     if energy == 0:
-        print "your'e dead as fuck bro"
+        print "Simon closes his eyes and begins to drift away ... his eyes do not open again."
         return
         print "your choices are:\n1.Bedroom\n2.Bathroom\n3.Kitchen\n4.Garage\n5.Window\n6.Living Room\n7.Nap"
 	inputVal = input("\nEnter your choice:")
