@@ -13,7 +13,7 @@ def kitchen():
         elif inputVal==4:
             return
         else:
- 	    print"\nInvalid choice\n"
+ 	        print"\nInvalid choice\n"
 
 def garage():
     print""
@@ -33,7 +33,7 @@ def bathroom():
     elif inputVal==3:
         return
     else:
- 	print"\nInvalid choice\n"
+ 	    print"\nInvalid choice\n"
 
 def bedroom():
     inputVal = input("\nSelect choice: ")
@@ -48,7 +48,7 @@ def bedroom():
     elif inputVal==5:
         return
     else:
-	print"\nInvalid choice\n"
+	    print"\nInvalid choice\n"
 	
 def energyBar():
     global energy
@@ -82,7 +82,7 @@ def hallway():
         elif inputVal==0:
             return
         else:
-	    print "\nInvalid entry\n"
+	        print "\nInvalid entry\n"
         energy -= 10
 
 def nap():
