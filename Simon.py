@@ -1,35 +1,29 @@
 def kitchen(): 
     print "You enter the Kitchen and see a Fridge, Stove, and Table ... "
+    bool = True
     while True:
         inputVal = input("Your choices are:\n1.Fridge\n2.Stove\n3.Table\n4.Return to Hallway\nSelect choice: ")
-
         if inputVal==1:
 	        print "\nYou look at the fridge, you stomach grumbles ... you are hungry"
         elif inputVal==2:
-            print "\nYou look at the stove, there is a letter sitting on top ..."
-            #TODO Print letter 1
+            if bool:
+                print "\nYou look at the stove, there is a letter sitting on top ..."
+                letter(letterCount)
+                global letterCount
+                letterCount += 1
+                bool = False
+            else: print "\nYou already read this letter ..."
+
 #add in stuff for reading letter twice etc ... ADD COUNTER, for first letter, write some specific statements etc
         elif inputVal==3:
             print "\nYou look at the table, yesterdays dirty dishes are left. Sophia has been rather absent recently ..."
         elif inputVal==4:
             return
         else:
- 	        print"\ninvalid choice\n"
+ 	        print"\nInvalid choice\n"
 
 def garage():
     print "In the Garage you see Sophia's car is missing, the concrete is cool on your feet, where did she go?"
-    while True:
-        inputVal = input("Your choices are:\n1.Look through the window\n2.Return to Hallway")
-        if inputVal==1:
-            print "You look through the window, there are no cars in sight. It is a sunny and beautiful day ..."
-            print "you wish you could go outside for a bit ..."
-        elif inputVal==2:
-            return
-        else:
-            print"\ninvalid choice\n"
-
-def garage():
-    print"You enter the Garage, the concrete is cool on your feet. You see that Sophia's car is missing, where did she go?"
     while True:
         inputVal = input("Your choices are:\n1.Look through the window\n2.Return to Hallway\nSelect choice: ")
         if inputVal==1:
@@ -41,33 +35,52 @@ def garage():
             print"\nInvalid choice\n"
 
 def window():
-    print "You peek through the window, a bird flys by and you are distracted for a period of time ... "
-#look through the window a second time and dont see bird D:
+    bool = True
+    if bool:
+        print "You peek through the window, a bird flys by and you are distracted for a period of time ... "
+        bool = False
+    else: print "You peek through the window again, sadly there's no bird this time ..."
 
 def livingRoom():
     print "In the living room and see a TV, Couch, and Coffee Table"
+    bool = True
     while True:
-        inputVal = input("Your choices are:\n1.TV\n2.Couch\n3.Coffee Table\n4.Return to Hallway")
+        inputVal = input("Your choices are:\n1.TV\n2.Couch\n3.Coffee Table\n4.Return to Hallway\nSelect choice: ")
         if inputVal==1:
             print "The TV is on, soothing music is playing."
         elif inputVal==2:
-            print "You see a letter stuffed between the cushions... "
+            if bool:
+                print "You see a letter stuffed between the cushions... "
+                letter(letterCount)
+                global letterCount
+                letterCount += 1
+                bool = False
+            else: print "You see the couch with the letter you already read ..."
         elif inputVal==3:
             print "You look on the coffee table, there is a half finished cup of tea ... Sophia always finishes her tea"
         elif inputVal==4:
             return
         else:
-            print"\ninvalid choice\n"
+            print"\nInvalid choice\n"
 
 def bathroom():
     print "In the bathroom you see a Sink and Bathtub. Sophia didn't drain her last bath ... lazy"
+    bool = True
     while True:
-        inputVal = input("Your choices are:\n1.Sink\n2.Bathtub\n3.Return to Hallway")
+        inputVal = input("Your choices are:\n1.Sink\n2.Bathtub\n3.Return to Hallway\nSelect choice: ")
         if inputVal==1:
 	        print "You look at the sink, and see your reflection in the mirror. You look cute today :3"
         elif inputVal==2:
-            print "You look at the bathtub and dip your foot in the water, it is cold and you are now upset"
-            print "to the side of the tub you see a letter ... "
+            if bool:
+                print "You look at the bathtub and dip your foot in the water, it is cold and you are now upset"
+                print "to the side of the tub you see a letter ... "
+                letter(letterCount)
+                global letterCount
+                letterCount += 1
+                bool = False
+            else: 
+                print "You look at the bathtub and dip your foot in the water, it is cold and you are now upset"
+                print "to the side of the tub you see the letter you already read ..."
         elif inputVal==3:
             return
         else:
@@ -75,13 +88,20 @@ def bathroom():
 
 def bedroom():
     print "In the bedroom you see a Bed, Dresser, and Nightstand. It's chilly in here."
+    bool = True
     while True:
-        inputVal = input("Your choices are:\n1.Bed\n2.Dresser\n3.Nightstand\n4.Return to Hallway")
+        inputVal = input("Your choices are:\n1.Bed\n2.Dresser\n3.Nightstand\n4.Return to Hallway\nSelect choice: ")
         if inputVal==1:
 	        print "You look at the bed, it is made nice and neat. You have an urge to get under the covers for a bit."
            # print "so you do ..."
         elif inputVal==2:
-            print "You look at the dressser, there is a letter ..."
+            if bool:
+                print "You look at the dressser, there is a letter ..."
+                letter(letterCount)
+                global letterCount
+                letterCount += 1
+                bool = False
+            else: print "You look at the dresser, and find the letter that you've a letter already read ..."
         elif inputVal==3:
             print "You look at the nightstand, there is a cute picture of you and Sophia."
             print "it fills you with love"
@@ -116,7 +136,7 @@ def hallway():
         elif inputVal==5:
 	        window()
         elif inputVal==6:
-	        livingroom()
+	        livingRoom()
         elif inputVal==7:
 	        nap()
         elif inputVal==0:
@@ -146,6 +166,7 @@ print"-----------------------------------------"
 print"    you wake up in the hallway. why did you fall asleep here? you stand up and stretch."
 print"Where is Sophia? you need to find out where she went. better investigate.              "
 energy=100
+letterCount = 1;
 hallway()
 
 
