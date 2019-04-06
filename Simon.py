@@ -269,22 +269,21 @@ def nap():
 
 def letter(letter): 
     if letter == 1:
-        subprocess.call(["afplay","first.mp3"])
         print "Dear Sophia,\nI had an amazing time with you today. I am so glad that we were\nable to connect. I would love nothing more than to see you again in the\nnear furture ...\nWarmly,\nKarl"
         print "*KARL! Who is this KARL. I must find out more information ... but why would Sophia hide\nthis from me?*"
+        subprocess.call(["afplay","first.mp3"])
     elif letter == 2:
-        subprocess.call(["afplay","third.mp3"])
         print "Dearest Sophia,\nI am so happy that we were able to meet up again! I am so grateful for your presence.\nYou are the love that came without warning; you had my heart before I could say no!\nLove,\nKarl"
         print "*They met up again! My hear is breaking ... Sophia ...*"
+        subprocess.call(["afplay","third.mp3"])
     elif letter == 3:
-        subprocess.call(["afplay","fourth.mp3"])
         print "Sophia!\nNo mountain, nor sea, no thing of this world could keep us apart, because this\nis not my world. You are! I think it is finally time to say, I LOVE YOU!\nLove,\nKarl <3"
         print "*I ... I cant belive this. Sophia ... my love ...*"
+        subprocess.call(["afplay","fourth.mp3"])
     elif letter == 4:
-        subprocess.call(["afplay","fifth.mp3"])
         print "My Love!\nYou are someone who makes love feel easy. I cannot express my deepest emotions in\nwords. You are everything to me. Being in love is a strange thing, my thoughts constantly\ndrift towards you. My stomach is in a constant state of butterflies. I have completely\nfallen for you. Everything you do, everything you say, everything you are. You are my\nfirst thought in the morning and the last thought I have before bed. And every thought\ninbetween ... you're there too.\nCan't wait to come by later,\nXOXO Karl"
         print"*This is the final straw! The second she gets home she will hear what I have to think!\nHow dare she ... the bond we have ...*"
-
+        subprocess.call(["afplay","fifth.mp3"])
 
 print"-----------------------------------------"
 print"            Wake up Simon"
@@ -295,8 +294,4 @@ energy=100
 letterCount = 1
 boolGlobal = True
 hallway()
-
-
-
-
 
