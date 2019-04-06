@@ -6,8 +6,6 @@ def window():
     print""
 def livingRoom():
     print""
-def nap():
-    print""
 def bathroom():
     inputVal = input("Select choice")
     if inputVal==1:
@@ -46,6 +44,9 @@ def hallway():
 	global energy
 	if energy>0:
 	    energy = energy-10
+    if energy == 0:
+        print "your'e dead as fuck bro"
+        return
         print "your choices are:\n1.Bedroom\n2.Bathroom\n3.Kitchen\n4.Garage\n5.Window\n6.Living Room\n7.Nap"
 	inputVal = input("\nEnter your choice:")
 	if inputVal==1:
@@ -66,7 +67,10 @@ def hallway():
 	    print "invalid entry"
 
 def nap():
-   if global  
+   global energy
+   if energy == 0:
+       print "Napping..."
+       energy = 100
 
 print"-----------------------------------------"
 print"            Wake up Simon"
