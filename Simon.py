@@ -40,31 +40,31 @@ def hallway():
     
     while True:
         print "you are in the hallway"
-	energyBar()
-	global energy
-	if energy>0:
-	    energy = energy-10
-    if energy == 0:
-        print "your'e dead as fuck bro"
-        return
+        energyBar()
+        global energy
+        if energy>0:
+	        energy = energy-10
+        if energy == 0:
+            print "your'e dead as fuck bro"
+            return
         print "your choices are:\n1.Bedroom\n2.Bathroom\n3.Kitchen\n4.Garage\n5.Window\n6.Living Room\n7.Nap"
-	inputVal = input("\nEnter your choice:")
-	if inputVal==1:
-	    bedroom()
-	elif inputVal==2:
-	    bathroom()
-	elif inputVal==3:
-	    kitchen()
-	elif inputVal==4:
-	    garage()
-	elif inputVal==5:
-	    window()
-	elif inputVal==6:
-	    livingroom()
-	elif inputVal==7:
-	    nap()
-	else:
-	    print "invalid entry"
+        inputVal = input("\nEnter your choice:")
+        if inputVal==1:
+	        bedroom()
+        elif inputVal==2:
+	        bathroom()
+        elif inputVal==3:
+	        kitchen()
+        elif inputVal==4:
+	        garage()
+        elif inputVal==5:
+	        window()
+        elif inputVal==6:
+	        livingroom()
+        elif inputVal==7:
+	        nap()
+        else:
+	        print "invalid entry"
 
 def nap():
    global energy
