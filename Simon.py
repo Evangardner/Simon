@@ -16,16 +16,16 @@ def kitchen():
  	        print"\nInvalid choice\n"
 
 def garage():
-    print""
+    inputVal = input("Your choices are:\n\nSelect choice: ")
 
 def window():
-    print""
+    inputVal = input("Your choices are:\n\nSelect choice: ")
 
 def livingRoom():
-    print""
+    inputVal = input("Your choices are:\n\nSelect choice: ")
 
 def bathroom():
-    inputVal = input("\nSelect choice: ")
+    inputVal = input("Your choices are:\n\nSelect choice: ")
     if inputVal==1:
 	    print""
     elif inputVal==2:
@@ -36,7 +36,7 @@ def bathroom():
  	    print"\nInvalid choice\n"
 
 def bedroom():
-    inputVal = input("\nSelect choice: ")
+    inputVal = input("Your choices are:\n\nSelect choice: ")
     if inputVal==1:
 	print""
     elif inputVal==2:
